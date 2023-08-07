@@ -76,7 +76,89 @@
     cursor: default;
 }
 
-.info-detail {
+/* 최상위 컨테이너 설정 */
+
+.main-container {
+    margin: 10px auto;
+    width: 550px;
+    height: 100%;
+  }
+  
+  /*, ToDo를 화면에서 숨김 - display: none */
+  .main-hidden {
+    display: none;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .main-title {
+    margin: 20px 0px 0px 20px;
+    font-size: 36px;
+  }
+  
+  /* User Information main 파트 스타일 지정 */
+  .info-photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .info-photo:hover {
+    opacity: 0.8;
+  }
+  
+  .photo-file {
+    display: none;
+  }
+  
+  .info-photo img {
+    width: 100%;
+  }
+  
+  .change-nav {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+  
+    display: none;
+  
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #121212;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .info-photo:hover .change-nav {
+    display: block;
+  }
+  
+  .info-main {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .info-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: default;
+  }
+  
+  .button-hidden {
+    display: none;
+  }
+  
+  .info-detail {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
